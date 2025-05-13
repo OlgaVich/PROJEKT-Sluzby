@@ -1,0 +1,326 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #FAFAFA;  
+}
+
+.all {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  max-width: 460px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #8B8B8B;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.tlacitko-modre, 
+.tlacitko-sede {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 20px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+   
+.tlacitko-modre {
+    background-color: #407BFF;
+    width: 195px;
+    height: 40px;
+}
+
+.tlacitko-sede {
+    background-color: #8B8B8B;
+    width: 220px;
+    margin-top: 10px;   
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.mapa,
+.exotika,
+.letenky,
+.palma,
+.slunecnik,
+.auto {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 460px;
+  height: 80px;
+  box-shadow: 0px 2px 5px 2px #407BFF1F;
+} 
+
+
+.odkazy {
+    font-size: 13px;
+    font-weight: 300;
+    color: #8B8B8B;
+    margin:30px 0 30px  0px;
+}
+
+.obrazek {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+}
+
+.cara {
+    border-bottom: 2px solid #407BFF;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;}
+
+@media screen and (min-width:640px) {
+
+    .tlacitko-modre, 
+    .tlacitko-sede {
+        display: inline-block;
+        margin-bottom: 0;}
+
+    .tlacitko-sede{
+        margin-left: 20px;
+        margin-top: 0px;}
+
+    .all {
+        max-width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .logo {
+        width: 400px;
+        margin-bottom: 80px;
+    }
+
+    h1 {
+        margin-top: 30px;
+    }
+    
+    p {
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;}
+
+    .prvni,
+    .druhy {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        
+    }
+
+    .mapa,
+    .exotika,
+    .letenky,
+    .palma,
+    .slunecnik,
+    .auto { 
+        flex: 0 1 auto;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 3) - 40px;
+        height: 170px;
+        max-width: 230px;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 0 20px 0;
+        margin: 0;
+        
+       
+    }
+    
+    h2 {
+        margin-top: 80px;
+    }
+
+
+
+    .obrazek {
+       width: 45px;
+       height: 40px;
+       margin-top: 40px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 20px;
+    }
+
+    .odkazy {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        flex: 0 1 100%;
+        max-width: 210px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;   
+    }
+    
+}
+
+@media screen and (min-width:1100px) {
+    .all {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        max-width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    .uvod {
+        display: flex;
+        gap: 60px;
+       align-items: center;    
+    }
+
+    h1 {
+        text-align: left;
+        margin-left: 0;
+    }
+    p {
+        text-align: left;
+        margin: 0;
+        max-width: 490px;
+    }
+
+    .cara {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .logo {
+        max-width: 425px;
+        margin-left: auto;
+        margin-right: auto;
+        flex: 0 1 auto;
+        width: calc((100% / 2) - 30px);
+        order: 1;
+    }
+    .odstavec {
+        max-width: 490px;
+        flex: 0 1 auto;
+        width: calc((100% / 2) - 30px);
+        padding: 0;    
+    }
+
+    .nabidka1,
+    .nabidka2 {
+        display: flex;
+        gap: 60px;
+        justify-content: center;
+        align-items: center
+    }
+
+    .odkazy {
+        flex: 0 1 auto;
+        max-width: 170px;
+        text-align: center;
+       
+        margin-bottom: 0;
+       
+    }
+
+    .prvni {
+        flex-basis: calc((100% / 2) + 30px);
+        max-width: 550px;
+        order: 1;
+    }
+
+    .cestovka {
+        flex-basis: calc((100% / 2) - 30px);
+        max-width: 430px;
+        text-align: left;
+        order: 2;
+    }
+
+    .druhy {
+        
+        max-width: 550px;
+        flex-basis: calc((100% / 2) + 30px);        
+    }
+
+    .delegati {
+       
+        max-width: 430px;
+        flex-basis: calc((100% / 2) - 30px);
+        text-align: left; 
+    }
+
+    h2 {
+        text-align: left;
+        margin-left: 0;
+        margin-top: 0;    
+    }
+    .tlacitko-sede {
+        margin-right: 50px;
+     
+    }
+    .mapa,
+    .exotika,
+    .letenky,
+    .palma,
+    .slunecnik,
+    .auto { 
+        display: flex;
+        flex: 0 1 calc((100% - 40px) / 3);
+        max-width: 170px;
+        height: 190px;
+        justify-content: space-around;
+        padding-bottom: 40px;
+       
+    }
+
+    .tlacitko-modre, 
+    .tlacitko-sede {
+        margin-top: 30px;
+    }
+} 
